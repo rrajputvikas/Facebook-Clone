@@ -1,0 +1,123 @@
+:root {
+    --color-navbar : rgb(255, 255, 255);
+    --search-bar-color : rgb(241, 241, 241);
+    --full-body-color : rgb(241, 244, 247);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100vh;
+}
+
+body{
+    height: 100%;
+    background-color: var(--full-body-color);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.fl {
+    display: flex;
+}
+.navbar {
+    /* justify-content: space-between; */
+    position: fixed;
+    background-color: var(--color-navbar);
+    box-shadow: 0 .1px 10px -5px rgb(110, 110, 110);
+}
+.navbar_size {
+    width: 100%;
+    height: 56px;
+}
+.wh-40 {
+    width: 40px;
+    height: 40px;
+}
+.fb_search {
+    margin-left: 16px;
+    align-items: center;
+}
+.input_div{
+    margin: 8px;
+    width: 240px;
+    height: 40px;
+    border-radius: 50px;
+    align-items: center;
+}
+.input_div img {
+    width:22px;
+    height: 22px;
+    padding: 8px 0 8px 8px;
+}
+.input_div input {
+    background-color: var(--search-bar-color);
+    width: 100%;
+    border-radius: 50px;
+    border: none;
+    padding: 7px 8px 6px 6px;
+}
+.input_div input:focus {
+    outline: none;
+}
+.input_div input::placeholder {
+    font-size: 1.1em;
+}
+.mid_icon {
+    width: inherit;
+    justify-content: center;
+    align-items: center;
+}
+.mid_icon img{
+    width: 25px;
+    height: 25px;
+}
+.mid_icon a {
+    width: 111px;
+    padding: 11.5px 0;
+    margin-left: 8px;
+    justify-content: center;
+    border-radius: 10px;
+    transition: all 0.2s;
+}
+.mid_icon a:active {
+    border-top: 2px solid red;
+    border-bottom: 2px solid blue;
+}
+.mid_icon a:hover {
+    background-color: rgb(207, 207, 207);
+}
+.left_content {
+    width: 100%;
+}
+.right_content a {
+    align-items: center;
+    padding: 10px;
+    margin: 8px 10px 8px 0;
+    border-radius: 50px;
+    background-color: rgb(226, 226, 226);
+}
+.right_content img {
+    width: 20px;
+    height: 20px;
+}
+.right_content a#profile {
+    padding: 0 4px;
+    margin: 11px 10px 11px 0;
+    background-color: transparent;
+}
+.right_content a#profile:hover {
+    background-color: var(--search-bar-color);
+}
+.right_content a#profile img {
+    width: 28px;
+    height: 28px;
+    margin-right: .5em;
+    border-radius: 100%;
+}
